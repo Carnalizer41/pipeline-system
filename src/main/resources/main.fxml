@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.shyrkov.controller.BaseController">
+   <children>
+      <TableView fx:id="systemTable" layoutX="14.0" layoutY="59.0" prefHeight="326.0" prefWidth="232.0">
+        <columns>
+          <TableColumn fx:id="xId" prefWidth="75.0" text="XId" />
+          <TableColumn fx:id="yId" prefWidth="75.0" text="YId" />
+            <TableColumn fx:id="pipeLength" prefWidth="81.16361971264072" text="Length" />
+        </columns>
+      </TableView>
+       <TableView fx:id="pointsTable" layoutX="262.0" layoutY="59.0" prefHeight="326.0" prefWidth="154.0">
+           <columns>
+               <TableColumn fx:id="pointA" prefWidth="75.0" text="PointA" />
+               <TableColumn fx:id="pointB" prefWidth="78.54547582200755" text="PointB" />
+           </columns>
+       </TableView>
+       <Button layoutX="14.0" layoutY="14.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="202.0" text="Choose pipeline system input file" />
+       <Button layoutX="262.0" layoutY="16.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="168.0" text="Choose points set input file" />
+       <Button layoutX="447.0" layoutY="16.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="138.0" text="Calculate routes" />
+       <TableView fx:id="resultTable" layoutX="415.0" layoutY="59.0" prefHeight="326.0" prefWidth="176.0">
+           <columns>
+               <TableColumn fx:id="hasRoute" prefWidth="85.52728271484375" text="HasRoute" />
+               <TableColumn fx:id="minLength" prefWidth="86.40003205102374" text="Length" />
+           </columns>
+       </TableView>
+      <Button fx:id="chooseSystemBtn" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="202.0" text="Choose pipeline system input file" />
+      <Button fx:id="choosePointsBtn" layoutX="262.0" layoutY="16.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="168.0" text="Choose points set input file" />
+      <Button fx:id="calculateBtn" layoutX="447.0" layoutY="16.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="138.0" text="Calculate routes" />
+   </children>
+</AnchorPane>
